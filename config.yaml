@@ -1,4 +1,5 @@
-baseURL: ""
+# baseURL: ""
+baseURL: "https://angeloyo.github.io/limpiapuntes-web2"
 theme: "up-business-theme"
 languageCode: "es-ES"
 
