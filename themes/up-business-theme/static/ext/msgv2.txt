@@ -1,0 +1,7 @@
+{
+    "message": "Desgraciadamente la extensión está en mantenimiento y ha dejado de funcionar. ¡Estamos en ello!",
+    "style": {
+        "color": "#FF0000",
+        "font-size": "16px",
+    }
+}
