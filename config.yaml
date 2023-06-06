@@ -1,0 +1,55 @@
+baseURL: ""
+theme: "up-business-theme"
+languageCode: "es-ES"
+
+title: "Limpiapuntes"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Limpiapuntes"
+  description: "Limpia de anuncios tus apuntes."
+  images: 
+    - "images/hero-image.png"
+
+  logo: "logo.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    dribbble: "#"
+    instagram: ""
+    facebook: "#"
+    twitter: "https://twitter.com/limpiapuntes"
+
+  contact:
+    - "limpiapuntes@proton.me"
+
+  copyright: "© 2023 Limpiapuntes All Rights Reserved"
+
+  postProcess: false
+
+menus:
+  buttons:
+    - name: "Apóyanos"
+      url: "https://ko-fi.com/limpiapuntes"
+      weight: 1
+      pre: "btn btn-primary text-light"
+
+  footer:
+    - name: "Términos y condiciones"
+      url: "/terms-and-conditions.html"
+      weight: 1
+
+    - name: "Privacy Policy"
+      url: "/privacy-policy.html"
+      weight: 2
+
+    - name: "EULA"
+      url: "/EULA.html"
+      weight: 3

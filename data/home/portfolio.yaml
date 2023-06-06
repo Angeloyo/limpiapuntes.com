@@ -1,0 +1,21 @@
+enabled: true
+id: "portfolio"
+
+content:
+  - image: "images/study.png"
+    pretitle: "Ventajas"
+    title: "Gratis, rápido, sencillo, en cualquier ventana."
+    text: "Sólo tienes que descargar la extensión y anclarla a tu navegador. ¡Listo! Ahora puedes quitar la publicidad a tus apuntes en cualquier momento 
+    de forma totalmente gratuita, incluso si no tienes conexión a internet."
+
+  - image: "images/study-3.png"
+    pretitle: "¿Quiénes somos?"
+    title: "Estudiantes, como tú."
+    text: "Sabemos lo que se siente al estar obligado a pagar para tener apuntes sin publicidad 
+    invasiva. Como tú, pensamos que unos apuntes limpios son clave para el estudio sin distracciones.
+    Por eso creamos esta extensión."
+
+  - image: "images/study-5.png"
+    pretitle: "Nuestra filosofía"
+    title: "Sin lucro económico."
+    text: "Nunca pondremos anuncios ni obtendremos un céntimo cuando uses nuestros servicios. No sólo eso, también somos open-source para que juntos la comunidad de desarrolladores podamos mejorar el proyecto."

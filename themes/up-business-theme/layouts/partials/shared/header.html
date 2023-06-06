@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-xl navbar-light bg-light py-4">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="{{ .Site.BaseURL }}">
+      <!-- <img src="images/logo.png" > -->
+      {{ partial "utilities/image.html" "images/logo.png" }}
+      <span class="fs-2 fw-semibold text-primary">{{ .Site.Title }}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+        {{ range .Site.Menus.main }}
+          <li class="nav-item text-center">
+            <a class="nav-link text-primary px-4 " href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+        <style>
+          .cursorpointer {
+            cursor: pointer;
+          }
+        </style>
+        <li class="nav-item text-center">
+          <a onclick="scrollToSection()" class="fs-5 cursorpointer nav-link text-primary px-4" >Descarga</a>
+        </li>
+        <li class="nav-item text-center">
+          <a target="_blank" href="https://github.com/angeloyo/limpiapuntes-chrome-extension" class="fs-5 cursorpointer nav-link text-primary px-4" >GitHub</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-xl-3 mb-2 mb-xl-0">
+        {{ range .Site.Menus.buttons }}
+          <li class="nav-item">
+            <a class="fs-5 nav-link btn btn-primary text-light px-4" target="_blank" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+        <!-- <li class="nav-item">
+          <a class="nav-link btn btn-primary text-light px-4" target="_blank" href="">Puta</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+  function scrollToSection() {
+    // Obtener el elemento de la sección de destino
+    var seccionDestino = document.getElementById("cta");
+    // Hacer scroll suave hacia la sección de destino
+    seccionDestino.scrollIntoView({ behavior: "smooth" });
+  }
+  </script>

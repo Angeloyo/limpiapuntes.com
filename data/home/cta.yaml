@@ -1,0 +1,7 @@
+enabled: true
+id: "cta"
+
+content:
+  title: "Descarga la extensión en tu navegador favorito."
+  image: "images/CWS-LB.png"
+  text: "Actualmente sólo disponible para Google Chrome. Más navegadores próximamente."

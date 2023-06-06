@@ -1,0 +1,57 @@
+<head>
+  <!-- Title -->
+  <title>Limpiapuntes</title>
+
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{end}}" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@limpiapuntes">
+  <meta name="twitter:title" content="Limpiapuntes">
+  <meta name="twitter:description" content="Limpia tus apuntes de publicidad.">
+  <meta name="twitter:image" content="https://limpiapuntes.com/images/card.png">
+
+
+  <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+  <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+  cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"es","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Limpiapuntes","website_privacy_policy_url":"https://limpiapuntes.com/privacy-policy.html"});
+  });
+  </script>
+
+  <!-- Google Analytics -->
+  <script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-DEY21FR14R"></script>
+    <script type="text/plain" data-cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DEY21FR14R');
+    </script>
+  <!-- end of Google Analytics-->
+
+  <!-- Google AdSense -->
+  <script type="text/plain" data-cookie-consent="targeting" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6055424248889693"
+      crossorigin="anonymous"></script>
+  <!-- end of Google AdSense-->
+
+  <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
+  <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+
+  <!-- Favicons and Manifest -->
+  {{ partial "head/_favicons.html" . }}
+
+  <!-- SEO: Google Analytics -->
+  {{ partial "head/_seo.html" . }}
+
+  <!-- Stylesheets and Javascript -->
+  {{ partial "head/_resources.html" . }}
+
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>

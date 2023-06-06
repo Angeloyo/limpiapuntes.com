@@ -1,0 +1,11 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Limpia tus apuntes de **publicidad**"
+  text: "Con esta extensión para tu navegador."
+
+  buttonSecondary:
+    label: "Consíguela"
+    url: ""
+
