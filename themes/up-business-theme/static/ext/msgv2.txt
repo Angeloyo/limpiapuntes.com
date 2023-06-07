@@ -1,7 +1,7 @@
 {
-    "message": "Desgraciadamente la extensión está en mantenimiento y ha dejado de funcionar. ¡Estamos en ello!",
+    "message": "Hemos detectado que la extensión no funciona para determinados archivos, estamos trabajando en ello. Sentimos las molestias.",
     "style": {
         "color": "#FF0000",
-        "font-size": "16px"
+        "font-size": "14px"
     }
 }
