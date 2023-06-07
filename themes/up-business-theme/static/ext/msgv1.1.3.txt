@@ -1,0 +1,7 @@
+{
+    "message": "La extensión vuelve a funcionar pero hemos tenido que volver a una versión anterior donde el procesado tarda más tiempo y es necesario conexión a internet. ¡Lo sentimos!",
+    "style": {
+        "color": "#FF0000",
+        "font-size": "13px"
+    }
+}
