@@ -1,0 +1,7 @@
+{
+    "message": "Seguimos en versiones de prueba y es posible que haya archivos que no se puedan procesar. Sentimos las molestias.",
+    "style": {
+        "color": "#FF0000",
+        "font-size": "13px"
+    }
+}
